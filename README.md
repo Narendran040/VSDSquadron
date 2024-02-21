@@ -20,7 +20,8 @@ Installed all required tools.
     make
   ```
     
-  ![gnutool](https://github.com/SahilPrabhu/riscv-vsd/assets/92974277/837c8d1f-48fb-4c40-9465-0d56a78147fa)
+ ![screen 1](https://github.com/Narendran040/RISCV/assets/157210399/db9eaf8a-81f8-4223-ab89-273b0b598f02)
+
   ![Screenshot 2024-02-21 181550](https://github.com/Narendran040/RISCV/assets/157210399/8d5b6f8a-650a-41aa-b3e3-696b1f2068f0)
   </details>
  <details>

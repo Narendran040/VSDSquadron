@@ -21,8 +21,7 @@ Installed all required tools.
   ```
     
   ![gnutool](https://github.com/SahilPrabhu/riscv-vsd/assets/92974277/837c8d1f-48fb-4c40-9465-0d56a78147fa)
-  ![gnutool2](https://github.com/SahilPrabhu/riscv-vsd/assets/92974277/22b75d96-368b-4af9-ab8d-3d12be9addd2)
-
+  ![Screenshot 2024-02-21 181550](https://github.com/Narendran040/RISCV/assets/157210399/8d5b6f8a-650a-41aa-b3e3-696b1f2068f0)
   </details>
  <details>
  <summary> Yosys </summary>

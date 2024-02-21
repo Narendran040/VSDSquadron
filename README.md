@@ -49,6 +49,7 @@ sudo make install
   ```bash
 sudo apt-get install iverilog
  ```
+![Screenshot 2024-02-21 182736](https://github.com/Narendran040/RISCV/assets/157210399/d147a3f7-43a1-4832-9e76-e045e4d289ef)
 
 </details>
 <details>

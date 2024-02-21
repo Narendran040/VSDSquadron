@@ -85,7 +85,7 @@ cd release
 make
 sudo make install
  ```
-![ngspice1](https://github.com/SahilPrabhu/riscv-vsd/assets/92974277/797366ca-cfe9-40d5-b8dd-b1ae07bca036)
+
 </details>
 <details>
 <summary> Magic </summary>
@@ -100,10 +100,7 @@ sudo apt-get install libcairo2-dev
 sudo apt-get install mesa-common-dev libglu1-mesa-dev
 sudo apt-get install libncurses-dev
  ```
-![magic1](https://github.com/SahilPrabhu/riscv-vsd/assets/92974277/efadb056-1548-4298-865b-a29e4beba0f5)
-![magic2](https://github.com/SahilPrabhu/riscv-vsd/assets/92974277/530caf36-3315-41a3-a979-ef287589e9a3)
-![magic3](https://github.com/SahilPrabhu/riscv-vsd/assets/92974277/ca33ac28-baf6-42e8-b6cc-8a10bab02a1a)
-![magicmain](https://github.com/SahilPrabhu/riscv-vsd/assets/92974277/bef109c7-7bc7-46b9-9e01-f9ba476eef6b)
+
 </details>
 <details>
 <summary> OpenLane </summary>
@@ -122,9 +119,7 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 sudo reboot
 ```
-![openlane1](https://github.com/SahilPrabhu/riscv-vsd/assets/92974277/9f616a42-5d3f-4f03-a859-6896ff12da5f)
-![openlane2](https://github.com/SahilPrabhu/riscv-vsd/assets/92974277/2683c2ce-5b9e-43b3-bbc8-504f57317103)
-![openlanemain](https://github.com/SahilPrabhu/riscv-vsd/assets/92974277/88070cfb-9af7-4520-a203-0f5687bfd2ff)
+
 </details>
 <details>
   <summary> PDKs </summary>
@@ -136,6 +131,5 @@ cd OpenLane
 make
 make test
 ```
-![openlanemain2](https://github.com/SahilPrabhu/riscv-vsd/assets/92974277/a2dfe03b-cb5b-4ebb-a7a1-6c9b40947f78)
 
 </details>

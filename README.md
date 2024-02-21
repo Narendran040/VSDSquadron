@@ -58,7 +58,7 @@ sudo apt-get install iverilog
   ```bash
 sudo apt-get install gtkwave
  ```
-![gtkwave](https://github.com/SahilPrabhu/riscv-vsd/assets/92974277/8405619b-76be-4f70-bcbb-063253a1c740)
+![Screenshot 2024-02-21 183202](https://github.com/Narendran040/RISCV/assets/157210399/8b052bb8-a3e5-4a2a-bd7a-be6c6cde457e)
 </details>
 <details>
  <summary> OpenSTA </summary>

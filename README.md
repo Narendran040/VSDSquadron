@@ -46,7 +46,8 @@ sudo make install
   ```bash
 sudo apt-get install iverilog
  ```
-![iverilog](https://github.com/SahilPrabhu/riscv-vsd/assets/92974277/cfaff753-c5cd-4c0f-ae22-ecca83fd724d)
+![Screenshot 2024-02-21 182022](https://github.com/Narendran040/RISCV/assets/157210399/ab73fc91-e123-47ea-baf3-5705efcfed98)
+
 </details>
 <details>
  <summary> gtkwave </summary>

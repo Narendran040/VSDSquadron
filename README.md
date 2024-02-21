@@ -39,6 +39,9 @@ make config-gcc
 make 
 sudo make install
 ```
+![Screenshot 2024-02-21 182022](https://github.com/Narendran040/RISCV/assets/157210399/ab73fc91-e123-47ea-baf3-5705efcfed98)
+
+
 </details>
 <details>
 <summary> Iverilog </summary>
@@ -46,7 +49,6 @@ sudo make install
   ```bash
 sudo apt-get install iverilog
  ```
-![Screenshot 2024-02-21 182022](https://github.com/Narendran040/RISCV/assets/157210399/ab73fc91-e123-47ea-baf3-5705efcfed98)
 
 </details>
 <details>

@@ -71,7 +71,7 @@ cd build
 cmake ..
 make
 ```
-![opensta](https://github.com/SahilPrabhu/riscv-vsd/assets/92974277/4a8b624d-3615-4e2f-bae4-67b821ac4271)
+![Screenshot 2024-02-21 185458](https://github.com/Narendran040/RISCV/assets/157210399/067a5790-087d-4a22-8e1f-ade07bca4b74)
 </details>
 <details>
   <summary> Ngspice </summary>

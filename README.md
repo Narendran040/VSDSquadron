@@ -137,9 +137,6 @@ make test
 ### TASK 1
 
 
-
-</details>
-
 </details>	
 	<details>
     <instruction> Riscv GNU Toolchain</instruction>

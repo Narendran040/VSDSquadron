@@ -141,6 +141,6 @@ make test
 </details>
 
 </details>	
-	<Instruction>
+	<details>
     <instruction> Riscv GNU Toolchain</instruction>
 

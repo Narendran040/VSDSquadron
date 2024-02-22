@@ -137,5 +137,5 @@ make test
 ### TASK 1
 	
 	<details>
-       <instruction> Instructions </intruction>
+       Instructions 
 

@@ -139,5 +139,5 @@ make test
 
 </details>	
 	<details>
-    <instruction> Riscv GNU Toolchain</instruction>
+    <instruction> What are instructions/instruction>
 

@@ -140,6 +140,27 @@ make test
 
 </details>
 <Instruction>Instructions</Instruction>
+An instruction, in the context of computing and programming, refers to a single operation that a computer's central processing unit (CPU) can execute. Instructions are the fundamental building blocks of computer programs and are used to perform specific tasks or operations on data.
 
+There are several types of instructions commonly found in computer architectures:
 
+Arithmetic Instructions: These instructions perform basic arithmetic operations such as addition, subtraction, multiplication, and division. Examples include ADD, SUBTRACT, MULTIPLY, and DIVIDE.
+
+Logical Instructions: Logical instructions perform logical operations such as AND, OR, XOR, and NOT. These instructions are used to manipulate bits and perform Boolean logic operations.
+
+Data Transfer Instructions: Data transfer instructions move data between different memory locations or between memory and CPU registers. Examples include LOAD (move data from memory to register) and STORE (move data from register to memory).
+
+Control Instructions: Control instructions determine the sequence of execution of instructions in a program. They include instructions such as JUMP (unconditional branch), BRANCH IF EQUAL, BRANCH IF LESS THAN, and CALL (to execute subroutines).
+
+Comparison Instructions: Comparison instructions compare two values and set flags or registers based on the result. Examples include COMPARE, TEST, and CMP (compare).
+
+Input/Output Instructions: Input/output instructions enable communication between the CPU and external devices such as keyboards, displays, disks, and network interfaces.
+
+Floating-Point Instructions: Floating-point instructions perform arithmetic and mathematical operations on floating-point numbers. These instructions are commonly used in scientific and engineering applications.
+
+String Instructions: String instructions are used for manipulating strings of characters. They include operations such as searching for a substring, copying strings, and comparing strings
+
+</details>	
+	<details>
+    <instruction> Riscv GNU Toolchain</instruction>
 

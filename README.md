@@ -141,4 +141,46 @@ make test
  Instructions: Instructions are the basic operations that a processor can perform. These instructions can include arithmetic and logic operations, data movement operations (such as load and store), control transfer instructions (like branches and jumps), and special-purpose instructions for system control and communication.
 <details>
  <summary> Types of Instructions </summary>
+
+1. **Arithmetic Instructions**:
+   - These instructions perform arithmetic operations on data stored in registers or memory.
+   - Examples:
+     - ADD (addition): Adds two operands and stores the result.
+     - SUB (subtraction): Subtracts one operand from another and stores the result.
+     - MUL (multiplication): Multiplies two operands and stores the result.
+     - DIV (division): Divides one operand by another and stores the result.
+
+2. **Logic Instructions**:
+   - Logic instructions perform bitwise logical operations on binary data.
+   - Examples:
+     - AND (bitwise AND): Performs a logical AND operation on two operands.
+     - OR (bitwise OR): Performs a logical OR operation on two operands.
+     - XOR (bitwise XOR): Performs a logical XOR (exclusive OR) operation on two operands.
+     - NOT (bitwise complement): Inverts the bits of an operand.
+
+3. **Data Movement Instructions**:
+   - These instructions move data between registers and memory or between different locations in memory.
+   - Examples:
+     - MOV (move): Copies data from one location to another.
+     - LOAD (load): Loads data from memory into a register.
+     - STORE (store): Stores data from a register into memory.
+     - PUSH and POP: Pushes data onto the stack or pops data from the stack.
+
+4. **Control Transfer Instructions**:
+   - Control transfer instructions alter the flow of program execution.
+   - Examples:
+     - JMP (jump): Unconditionally transfers control to a specified memory address.
+     - CALL and RET (call and return): Used for function calls and returns in procedural programming.
+     - JZ (jump if zero) and JNZ (jump if not zero): Conditionally transfer control based on the result of a previous operation.
+     - CMP (compare): Compares two operands and sets flags for conditional jumps.
+
+5. **Floating-Point Instructions**:
+   - Floating-point instructions perform arithmetic and other operations on floating-point numbers.
+   - Examples:
+     - FADD (floating-point addition)
+     - FSUB (floating-point subtraction)
+     - FMUL (floating-point multiplication)
+     - FDIV (floating-point division).
+
+
  

@@ -138,49 +138,71 @@ make test
 	
  <details>
  <summary> Instructions </summary>
- Instructions: Instructions are the basic operations that a processor can perform. These instructions can include arithmetic and logic operations, data movement operations (such as load and store), control transfer instructions (like branches and jumps), and special-purpose instructions for system control and communication.
+Instructions in an Instruction Set Architecture (ISA) represent the fundamental operations that a processor can execute. They are encoded binary patterns understood by the CPU, each corresponding to a specific operation or action. ISAs define the repertoire of instructions that a processor supports, including their formats, encodings, semantics, and behavior. Here's a breakdown of instructions in an ISA:
+
+1. **Operation Codes (OpCodes)**:
+   - OpCodes are numerical values or bit patterns that represent specific operations or instructions.
+   - Each instruction in the ISA is identified by a unique OpCode that tells the CPU what operation to perform.
+   - For example, OpCode 0001 might represent an ADD operation, while OpCode 0010 might represent a SUBTRACT operation.
+
+2. **Instruction Formats**:
+   - Instructions are organized into different formats, specifying how the operands and OpCode are encoded within the instruction word.
+   - Common formats include R-Type (register), I-Type (immediate), J-Type (jump), and various memory access formats.
+   - The format of an instruction determines the fields it contains, such as OpCode, source/destination registers, immediate values, and memory addresses.
+
+3. **Operand Specification**:
+   - Instructions operate on operands, which can be registers, memory locations, or immediate values embedded within the instruction.
+   - Operand fields within the instruction specify the source(s) and destination(s) for the operation.
+   - For example, an ADD instruction might specify two source registers and one destination register where the result will be stored.
+
+4. **Addressing Modes**:
+   - Addressing modes determine how operands are specified and accessed within memory.
+   - Common addressing modes include direct addressing (using explicit memory addresses), indirect addressing (using pointers or references), and register addressing (using registers to hold operands).
+
+5. **Instruction Semantics**:
+   - Each instruction has well-defined semantics that describe its behavior and effects on processor state.
+   - Semantics include details such as whether an instruction modifies flags, affects the program counter, or triggers exceptions.
+   - For example, a LOAD instruction loads data from memory into a register, while a BRANCH instruction changes the flow of control within the program.
+
+6. **Instruction Set Extensions**:
+   - Some ISAs support extensions that provide additional instructions beyond the base set.
+   - These extensions may include specialized instructions for multimedia processing, cryptography, vector operations, or other application-specific tasks.
+
 <details>
- <summary> Types of Instructions </summary>
+ <summary> Instruction format types </summary>
 
-1. **Arithmetic Instructions**:
-   - These instructions perform arithmetic operations on data stored in registers or memory.
-   - Examples:
-     - ADD (addition): Adds two operands and stores the result.
-     - SUB (subtraction): Subtracts one operand from another and stores the result.
-     - MUL (multiplication): Multiplies two operands and stores the result.
-     - DIV (division): Divides one operand by another and stores the result.
 
-2. **Logic Instructions**:
-   - Logic instructions perform bitwise logical operations on binary data.
-   - Examples:
-     - AND (bitwise AND): Performs a logical AND operation on two operands.
-     - OR (bitwise OR): Performs a logical OR operation on two operands.
-     - XOR (bitwise XOR): Performs a logical XOR (exclusive OR) operation on two operands.
-     - NOT (bitwise complement): Inverts the bits of an operand.
+1. **R-Type Instructions**:
+   - **Description**: R-Type instructions are primarily used for arithmetic, logical, and shift operations where the operands are typically registers.
+   - **Format**: In R-Type instructions, the operation code (opcode) is accompanied by register specifiers for source operands and the destination register where the result is stored.
+   - **Examples**:
+     - ADD: Adds the contents of two registers and stores the result in another register.
+     - SUB: Subtracts the contents of one register from another and stores the result in another register.
+     - AND: Performs a bitwise AND operation between two registers and stores the result in another register.
+     - OR: Performs a bitwise OR operation between two registers and stores the result in another register.
+     - SLT (Set on Less Than): Compares two registers and sets a target register to 1 if the first register is less than the second; otherwise, it sets it to 0.
 
-3. **Data Movement Instructions**:
-   - These instructions move data between registers and memory or between different locations in memory.
-   - Examples:
-     - MOV (move): Copies data from one location to another.
-     - LOAD (load): Loads data from memory into a register.
-     - STORE (store): Stores data from a register into memory.
-     - PUSH and POP: Pushes data onto the stack or pops data from the stack.
+2. **I-Type Instructions**:
+   - **Description**: I-Type instructions are typically used for data transfer, immediate operations, and branch operations where one operand is an immediate value (constant) or a memory address.
+   - **Format**: In I-Type instructions, the opcode is accompanied by register specifiers and immediate values.
+   - **Examples**:
+     - ADDI: Adds a register and an immediate value, storing the result in another register.
+     - LW (Load Word): Loads a word from memory into a register.
+     - SW (Store Word): Stores a word from a register into memory.
+     - BEQ (Branch if Equal): Branches to a target address if two registers are equal.
+     - LUI (Load Upper Immediate): Loads an immediate value into the upper 16 bits of a register.
 
-4. **Control Transfer Instructions**:
-   - Control transfer instructions alter the flow of program execution.
-   - Examples:
-     - JMP (jump): Unconditionally transfers control to a specified memory address.
-     - CALL and RET (call and return): Used for function calls and returns in procedural programming.
-     - JZ (jump if zero) and JNZ (jump if not zero): Conditionally transfer control based on the result of a previous operation.
-     - CMP (compare): Compares two operands and sets flags for conditional jumps.
+3. **J-Type Instructions**:
+   - **Description**: J-Type instructions are primarily used for control transfer operations, such as unconditional jumps or branches to specific memory addresses.
+   - **Format**: J-Type instructions typically specify target addresses directly or through relative offsets.
+   - **Examples**:
+     - J (Jump): Unconditionally jumps to a target memory address.
+     - JAL (Jump and Link): Jumps to a target address and stores the return address in a register.
+     - JR (Jump Register): Unconditionally jumps to the address contained in a register.
+     - JALR (Jump and Link Register): Jumps to the address contained in a register and stores the return address in another register.
 
-5. **Floating-Point Instructions**:
-   - Floating-point instructions perform arithmetic and other operations on floating-point numbers.
-   - Examples:
-     - FADD (floating-point addition)
-     - FSUB (floating-point subtraction)
-     - FMUL (floating-point multiplication)
-     - FDIV (floating-point division).
+
+  
 
 
  

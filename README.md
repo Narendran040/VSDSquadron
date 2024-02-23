@@ -137,5 +137,8 @@ make test
 ### TASK 1
 	
  <details>
- <summary> Instruction </summary>
+ <summary> Instructions </summary>
  Instructions: Instructions are the basic operations that a processor can perform. These instructions can include arithmetic and logic operations, data movement operations (such as load and store), control transfer instructions (like branches and jumps), and special-purpose instructions for system control and communication.
+<details>
+ <summary> Types of Instructions </summary>
+ 

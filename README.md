@@ -201,8 +201,6 @@ Instructions in an Instruction Set Architecture (ISA) represent the fundamental 
      - JR (Jump Register): Unconditionally jumps to the address contained in a register.
      - JALR (Jump and Link Register): Jumps to the address contained in a register and stores the return address in another register.
 
-
-  
-
-
+<details>
+ <summary> Example </summary>
  

@@ -205,3 +205,4 @@ Instructions in an Instruction Set Architecture (ISA) represent the fundamental 
  <summary> Example </summary>
  
 ![`g](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/9710f515-41fa-4d7c-96f9-bc950f8d14e2)
+![h](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/06a7ba53-6de2-453c-ad74-37253dc6f8fb)

@@ -95,6 +95,10 @@ opcode: 7 bits - Specifies the operation to be performed.
 
 > S type
 
+
+![1663416913008](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/96021906-75d2-4b2a-ba30-be814af48696)
+
+
 The characteristic of S-type instruction is that there is no rd register. In this type of instruction, the immediate is divided into two parts, the first part is in bit11-5, and the second part is in bit4-0. The 5 bits of the immediate 4-0 occupy the position of rd in other instruction formats, and 5-11 occupy the position of funct7. Explain that the command format does not need to write back. That is, read the two values from the two registers and perform the operation together with the immediate, and write the result to the register after the operation is over.
 
 The 32-bit S-type instruction format consists of the following fields:

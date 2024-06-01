@@ -326,3 +326,6 @@ write_verilog -noattr iiitb_rv32i_synth.v
 yosys
 script yosys_run.sh
 ```
+
+Check for .v files by using ls -ltr 
+ .Synthesized netlist is written in "iiitb_rv32i_synth.v" file.

@@ -1,6 +1,6 @@
 # Riscv-VSD mini reaserch intership
 
-### TASK 0
+### TASK 1
  ### Compiling C code using Risc-V GNU Toolchain
 
 > C program
@@ -48,7 +48,7 @@ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 ![intern6](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/202a709b-5cd8-4103-ace6-41a0b5e0f496)
 
 
-### TASK 1
+### TASK 2
 
  ###  RISC-V base instruction formats
 
@@ -187,6 +187,103 @@ B-Type Instructions Encoding
 .BNE r0, r1, 20: 000000 00001 00000 001 01010 1100011
 
 .BEQ r0, r0, 15: 000000 00000 00000 000 01111 1100011
+
+### Task 3
+
+> BLOCK DIAGRAM OF RISC-V RV32I
+
+![Screenshot 2024-06-01 220845](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/5575fafe-f927-4cf7-a104-71cab4b99235)
+
+> INSTRUCTION SET OF RISC-V RV32I
+
+![Screenshot 2024-06-01 222418](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/daec22fa-a615-4c02-a02c-844370bf5164)
+
+Computational Instructions:
+
+ADD rd, rs1, rs2: Add two registers and store the result.
+
+SUB rd, rs1, rs2: Subtract one register from another and store the result.
+
+AND rd, rs1, rs2: Perform a bitwise AND operation between two registers.
+
+OR rd, rs1, rs2: Perform a bitwise OR operation between two registers.
+
+XOR rd, rs1, rs2: Perform a bitwise XOR operation between two registers.
+
+SLL rd, rs1, rs2: Perform a logical left shift operation on a register.
+
+SRL rd, rs1, rs2: Perform a logical right shift operation on a register.
+
+SLT rd, rs1, rs2: Set a register to 1 if one register is less than another.
+
+SLTU rd, rs1, rs2: Set a register to 1 if one register is less than another (unsigned).
+
+Memory Instructions:
+
+LW rd, offset(rs1): Load a word from memory into a register.
+
+SW rs2, offset(rs1): Store a word from a register into memory.
+
+LB rd, offset(rs1): Load a byte from memory into a register, sign-extending it.
+
+SB rs2, offset(rs1): Store a byte from a register into memory.
+
+LUI rd, immediate: Load an immediate value into the upper bits of a register.
+
+Control Flow Instructions:
+
+BEQ rs1, rs2, offset: Branch if two registers are equal.
+
+BNE rs1, rs2, offset: Branch if two registers are not equal.
+
+BLT rs1, rs2, offset: Branch if one register is less than another.
+
+JAL rd, offset: Jump and link (store the return address) to a new address.
+
+JALR rd, rs1, offset: Jump and link (store the return address) to an address specified by a register and an offset.d
+
+> FUNCTIONAL SIMULATION
+
+.Icarus Verilog is an implementation of the Verilog hardware description language.
+
+.GTKWave is a fully featured GTK+ v1. 2 based wave viewer for Unix and Win32 which reads Ver Structural Verilog Compiler generated AET files as well as standard Verilog VCD/EVCD files and allows their viewing.
+
+> Installing iverilog and gtkwave
+
+For Ubuntu
+
+Installation iverilog and GTKWave:
+
+```
+sudo apt-get update
+sudo apt-get install iverilog gtkwave
+```
+> Clone this repository for netlist files for simulation:
+
+```
+git clone https://github.com/vinayrayapati/rv32i.git
+./rv32i
+```
+
+
+> To simulate and run the verilog code
+
+```
+iverilog -o rv32i iiitb_rv32i.v iiitb_rv32i_tb.v
+./iiitb_rv32i
+```
+
+![task 3](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/7eeba585-c5bb-4f6e-ab26-b3429c119c99)
+
+> To see the output waveform in gtkwave
+
+```
+gtkwave iiitb_rv32i.vcd
+```
+
+![task 3 1](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/5941cb72-55a2-45ac-8fd4-b9d0a7fe39b9)
+
+> The output Waveform
 
 
 

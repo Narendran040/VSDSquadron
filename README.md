@@ -293,3 +293,36 @@ gtkwave iiitb_rv32i.vcd
 ![task 3 4](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/a7ab9f73-d88a-4c32-a195-7c7cc250a9ca)
 
 
+> Synthesis
+
+Synthesis transforms the simple RTL design into a gate-level netlist with all the constraints as specified by the designer. In simple language, Synthesis is a process that converts the abstract form of design to a properly implemented chip in terms of logic gates.
+
+
+> Commands for installing Yosys
+```
+git clone https://github.com/YosysHQ/yosys.git
+make
+sudo make install make test
+```
+
+
+> Create a yosys_run.sh file , which is the Yosys script file used to run the synthesis
+
+
+```
+read_liberty -lib lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog iiitb_rv32i.v
+synth -top iiitb_rv32i	
+dfflibmap -liberty lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+proc ; opt
+abc -liberty lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+clean
+flatten
+write_verilog -noattr iiitb_rv32i_synth.v
+```
+
+> Verilog files folder
+```
+yosys
+script yosys_run.sh
+```

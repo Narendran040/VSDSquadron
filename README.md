@@ -54,7 +54,8 @@ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 
  > Assembly instruction machine code format
 
- ![assem](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/d230a242-6051-419d-a4be-da35c13696f1)
+![32 bit](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/5c1716d9-ef5c-4107-b0b4-d6f3b766a8c4)
+
 
  
  . opcode (operation code), rd(destination register),rs1 & rs2 ( source registers),func3( 3-bit field that specifies the operation (function) within a particular opcode.),imm(immediate).
@@ -81,7 +82,8 @@ funct7: 7 bits - Further specifies the operation (used with the opcode and funct
 
 > I type
 
-![I type](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/31f6b28a-ed2a-4e38-99fd-149d8af7222d)
+![i](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/2cf2c7c4-47f2-404a-b3de-cbd782ba47e2)
+
 
 The I-type (Immediate type) instructions in RISC-V are used for operations that involve an immediate value (a constant embedded in the instruction itself), rather than a second source register. This format is used for various operations including arithmetic operations with immediate, load instructions, and some control instructions.
 
@@ -109,5 +111,46 @@ rs1: 5 bits - The first source register, which contains the base address.
 funct3: 3 bits - Specifies the operation within the opcode.
 imm[4:0]: 5 bits - The lower 5 bits of the immediate value.
 opcode: 7 bits - Specifies the operation to be performed.
+
+> U type
+
+![u type](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/b8991df5-4bf5-4235-b26e-65afaa69e398)
+
+ 
+ A 20-bit immediate is provided in the U-type instruction. The final operation result is related to the 20-bit immediate, and the result is written back to the rd register. The opcode determines the type of operation. There are no funct3, rs1, rs2, and funct7 in U-type. This type of instruction structure is very simple.
+
+ The 32-bit U-type instruction format consists of the following fields:
+
+imm[31:12]: 20 bits - The immediate value, which is placed in the upper 20 bits of the destination register.
+rd: 5 bits - The destination register.
+opcode: 7 bits - Specifies the operation to be performed.
+
+> B type
+
+![b](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/3ef90b40-cfce-4bdf-af6d-ab40a6e140db)
+
+B-type instructions are mainly used as branch instructions, but they are conditional Branch. It means to decide whether to jump or not need to depend on whether the condition is valid. The B-type machine code structure is shown in Figure 2-1. The instruction does not include rd register and funct7, but contains rs1, rs2, funct3 and immediate. The immediate is divided into two areas. The encoding of B-type instruction immediate is out of order. The reason is not described in detail here. There is a specific article on the official site explaining why it is out of order. In short, it has been verified that the effect on CPU operation function when the immediate number sequence is in this order is very well. But the immediate is disrupted, so it will be decoded when the CPU executes in the future. After decoding, the CPU needs to restore the disrupted immediate in order. For example, when the CPU gets a B-type instruction, the immediate in it is scrambled, and the CPU needs to arrange the immediate in the order of 12-1 to restore the immediate.
+
+The 32-bit B-type instruction format consists of the following fields:
+
+imm[12|10:5]: 7 bits - Part of the immediate value for the branch offset.
+rs2: 5 bits - The second source register.
+rs1: 5 bits - The first source register.
+funct3: 3 bits - Specifies the branch condition.
+imm[4:1|11]: 5 bits - Part of the immediate value for the branch offset.
+opcode: 7 bits - Specifies the branch operation.
+
+> J type
+
+![j](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/fd94bed8-9138-4d31-a38d-114ca274b59e)
+
+The J-type (Jump type) instructions in RISC-V are used for unconditional jumps to a target address, which is computed by adding a 20-bit immediate value to the current program counter (PC). The primary instruction in this category is JAL (Jump and Link), which stores the return address in a register.
+
+The 32-bit J-type instruction format consists of the following fields:
+
+imm[20|10:1|11|19:12]: 20 bits - The immediate value for the jump offset, split into multiple parts within the instruction.
+rd: 5 bits - The destination register for the return address.
+opcode: 7 bits - Specifies the jump operation.
+
 
 

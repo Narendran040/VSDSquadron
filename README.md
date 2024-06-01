@@ -152,7 +152,10 @@ imm[20|10:1|11|19:12]: 20 bits - The immediate value for the jump offset, split 
 rd: 5 bits - The destination register for the return address.
 opcode: 7 bits - Specifies the jump operation.
 
+> Identifying various Riscv instructions and their 32-bit code 
+
 R-Type Instructions Encoding
+
 .ADD r6, r2, r1: 0000000 00001 00010 000 00110 0110011
 
 .SUB r7, r1, r2: 0100000 00010 00001 000 00111 0110011

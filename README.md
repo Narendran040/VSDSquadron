@@ -56,8 +56,42 @@ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 
  ![assem](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/d230a242-6051-419d-a4be-da35c13696f1)
 
- >
- . opcode (operation code), rd(destination register),rs1 & rs2 ( source registers),func3(3bit function operation),imm(immediate).
-
-
  
+ . opcode (operation code), rd(destination register),rs1 & rs2 ( source registers),func3( 3-bit field that specifies the operation (function) within a particular opcode.),imm(immediate).
+
+
+
+
+> R-type
+
+![rtype](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/f5ae111f-695b-499d-b0e0-a014f882af2b)
+
+
+The R-type command format is very clear. In the actual encoding process, the arrangement of encoding positions is meaningful. For example, the encoding position of the three register indexes in different instruction formats are always the same. Index of Rd is at 11-7, Index of rs1 is at 19-15, and Index of rs2 is at 24-20. This is their fixed position. Some instructions may not be useful. The index to the partial register. For example, there is no rs2 in the second instruction type I-type, but there are rs1 and rd and their indexes are in the corresponding positions. For another example, in s-type funct3 is at bits 14-12. The opcode is available in all instruction formats, and the position remains unchanged, always bit 0-6.
+
+
+The 32-bit R-type instruction format consists of the following fields:
+
+opcode: 7 bits - Specifies the operation to be performed.
+rd: 5 bits - Destination register.
+funct3: 3 bits - Further specifies the operation (used with the opcode).
+rs1: 5 bits - Source register 1.
+rs2: 5 bits - Source register 2.
+funct7: 7 bits - Further specifies the operation (used with the opcode and funct3). 
+
+> I type
+
+![I type](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/31f6b28a-ed2a-4e38-99fd-149d8af7222d)
+
+The I-type (Immediate type) instructions in RISC-V are used for operations that involve an immediate value (a constant embedded in the instruction itself), rather than a second source register. This format is used for various operations including arithmetic operations with immediate, load instructions, and some control instructions.
+
+I-type Instruction Format
+The 32-bit I-type instruction format consists of the following fields:
+
+imm[11:0]: 12 bits - Immediate value.
+rs1: 5 bits - First source register.
+funct3: 3 bits - Specifies the operation within the opcode.
+rd: 5 bits - Destination register.
+opcode: 7 bits - Specifies the operation to be performed.
+
+

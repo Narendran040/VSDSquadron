@@ -48,8 +48,16 @@ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 ![intern6](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/202a709b-5cd8-4103-ace6-41a0b5e0f496)
 
 
-
-
 ### TASK 1
-	
+
+ ###  RISC-V base instruction formats
+
+ > Assembly instruction machine code format
+
+ ![assem](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/d230a242-6051-419d-a4be-da35c13696f1)
+
+ >
+ . opcode (operation code), rd(destination register),rs1 & rs2 ( source registers),func3(3bit function operation),imm(immediate).
+
+
  

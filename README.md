@@ -330,3 +330,14 @@ script yosys_run.sh
 Check for .v files by using ls -ltr 
 
  .Synthesized netlist is written in "iiitb_rv32i_synth.v" file.
+
+ > GATE LEVEL SIMULATION
+
+ Folllowing are the commands to run the GLS simulation
+
+```
+iverilog -DFUNCTIONAL -DUNIT_DELAY=#1 ../verilog_model/primitives.v ../verilog_model/sky130_fd_sc_hd.v iiitb_rv32i_synth.v iiitb_rv32i_tb.v
+./a.out
+gtkwave iiitb_rv32i.vcd
+```
+

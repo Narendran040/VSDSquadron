@@ -275,6 +275,7 @@ iverilog -o rv32i iiitb_rv32i.v iiitb_rv32i_tb.v
 
 ![task 3](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/7eeba585-c5bb-4f6e-ab26-b3429c119c99)
 
+
 > To see the output waveform in gtkwave
 
 ```
@@ -283,7 +284,12 @@ gtkwave iiitb_rv32i.vcd
 
 ![task 3 1](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/5941cb72-55a2-45ac-8fd4-b9d0a7fe39b9)
 
-> The output Waveform
 
+> The Output Waveform
+
+![task 3 2](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/3a721525-6f58-43d3-85f8-4e9d4cf4ef71)
+
+
+![task 3 4](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/a7ab9f73-d88a-4c32-a195-7c7cc250a9ca)
 
 

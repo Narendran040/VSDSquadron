@@ -385,3 +385,11 @@ The GPIO pins are configured according to the Reference Manual, ensuring the cor
 | 1 | 0 |  1  |  0  |   1  |
 | 1 | 1 |  0  |  0  |   1  |
 | 1 | 1 |  1  |  1  |   1  |
+
+> Pin connections
+
+Pin-Analog I/O pin-PC4
+
+Communication-SPI-PC5(SCK)
+
+

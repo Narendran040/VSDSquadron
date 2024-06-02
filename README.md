@@ -388,8 +388,9 @@ The GPIO pins are configured according to the Reference Manual, ensuring the cor
 
 > Pin connections
 
-Pin-Analog I/O pin-PC4
-
-Communication-SPI-PC5(SCK)
-
+|    |Name|VSDSquadron Mini|
+|----|----|----------------|
+Pin|Analog I/O pin|PC4,PD1,PD2,PD3|
+|Communication|SPI|PC5(SCK)|
+|||GND|
 

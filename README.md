@@ -385,6 +385,3 @@ The GPIO pins are configured according to the Reference Manual, ensuring the cor
 | 1 | 0 |  1  |  0  |   1  |
 | 1 | 1 |  0  |  0  |   1  |
 | 1 | 1 |  1  |  1  |   1  |
-
-
->Truth Table to Verify the Full Adder

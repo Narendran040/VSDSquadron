@@ -372,3 +372,19 @@ Input: Three inputs of a single bit are connected to the GPIO pins of VSDSquadro
 
 Outputs: Two LEDs are connected to display the result of Full Adder
 The GPIO pins are configured according to the Reference Manual, ensuring the correct flow of signals between the components
+
+> Truth Table to Verify the Full Adder
+
+| A | B | Cin | Sum | Cout |
+|---|---|-----|-----|------|
+| 0 | 0 |  0  |  0  |   0  |
+| 0 | 0 |  1  |  1  |   0  |
+| 0 | 1 |  0  |  1  |   0  |
+| 0 | 1 |  1  |  0  |   1  |
+| 1 | 0 |  0  |  1  |   0  |
+| 1 | 0 |  1  |  0  |   1  |
+| 1 | 1 |  0  |  0  |   1  |
+| 1 | 1 |  1  |  1  |   1  |
+
+
+>Truth Table to Verify the Full Adder

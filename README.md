@@ -306,7 +306,7 @@ sudo make install make test
 ```
 
 
-> Create a yosys_run.sh file , which is the Yosys script file used to run the synthesis
+> Create a yosys_run.sh file, which is the Yosys script file used to run the synthesis
 
 
 ```
@@ -329,15 +329,46 @@ script yosys_run.sh
 
 Check for .v files by using ls -ltr 
 
- .Synthesized netlist is written in "iiitb_rv32i_synth.v" file.
+ .Synthesized netlist is written in the "iiitb_rv32i_synth.v" file.
 
  > GATE LEVEL SIMULATION
 
- Folllowing are the commands to run the GLS simulation
+ Following are the commands to run the GLS simulation
 
 ```
 iverilog -DFUNCTIONAL -DUNIT_DELAY=#1 ../verilog_model/primitives.v ../verilog_model/sky130_fd_sc_hd.v iiitb_rv32i_synth.v iiitb_rv32i_tb.v
 ./a.out
 gtkwave iiitb_rv32i.vcd
 ```
+### Task 4
 
+### Full Adder using VSDSquadron Mini
+
+![task 4](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/c242534b-87c5-43a3-a2b3-6d4c541690c1)
+
+> Overview
+
+This project involves the implementation of a Full Adder combinational circuit using VSDSquadron Mini, a RISCV-based SoC development kit. Full Adder is a very important circuit in digital electronics, widely used in creating the design of n-bit Adder circuits. A full adder circuit is a digital circuit that adds two binary digits and a carry-in digit to produce a sum and carry-out digit. It’s a central component of most digital circuits that perform addition or subtraction. This project demonstrates the practical application of digital logic and RISC-V architecture in executing arithmetic operations, reflecting the process of reading and writing binary data through GPIO pins, implementing the operation of full adder through digital logic gates which is simulated using PlatformIO IDE and thus displaying the outputs using LEDs
+
+>Components Required
+
+VSDSquadron Mini
+
+Push Buttons for Input of binary data
+
+2 LEDs for displaying the Output
+
+Breadboard
+
+Jumper Wires
+
+VS Code for Software Development
+
+PlatformIO multi-framework professional IDE
+
+> Hardware Connections
+
+Input: Three inputs of a single bit are connected to the GPIO pins of VSDSquadron Mini via push buttons mounted on the breadboard.
+
+Outputs: Two LEDs are connected to display the result of Full Adder
+The GPIO pins are configured according to the Reference Manual, ensuring the correct flow of signals between the components

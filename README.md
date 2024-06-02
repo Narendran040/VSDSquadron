@@ -290,7 +290,10 @@ gtkwave iiitb_rv32i.vcd
 ![task 3 2](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/3a721525-6f58-43d3-85f8-4e9d4cf4ef71)
 
 
-The output waveform shows the instructions performed in a 5-stage pipelined architecture.
+![task 3 4](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/a7ab9f73-d88a-4c32-a195-7c7cc250a9ca)
+
+
+> The output waveform shows the instructions performed in a 5-stage pipelined architecture.
 
 Instruction 1:add r6,r2,r1
 
@@ -368,7 +371,8 @@ Full 5-stage instruction pipeline and pc-increment description Waveform
 
 
 
-![task 3 4](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/a7ab9f73-d88a-4c32-a195-7c7cc250a9ca)
+
+
 
 
 > Synthesis

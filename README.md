@@ -394,19 +394,16 @@ Pin|Analog I/O pin|PC4,PD1,PD2,PD3|
 |Communication|SPI|PC5(SCK)|
 |||GND|
 
-PC4: Input A
 
-PD1: Input B
+PD1: Input A
 
-PD2: Input Cin
+PD2: Input B
 
-PD3: Output Sum
+PD3: Input Cin
 
-PC5 (SCK): SPI Clock
+PC4: Output Sum
 
-> SPI Overview
-
-SPI is a synchronous serial communication protocol used for short-distance communication, primarily in embedded systems. It allows multiple devices to communicate with one another by sharing a common clock signal, which ensures data is transmitted in a synchronized manner.
+PC5 : Ouput Cout
 
 
 > How to program

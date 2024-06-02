@@ -395,22 +395,19 @@ Pin|Analog I/O pin|PC4,PD1,PD2,PD3|
 |||GND|
 
 PC4: Input A
+
 PD1: Input B
+
 PD2: Input Cin
+
 PD3: Output Sum
+
 PC5 (SCK): SPI Clock
 
 > SPI Overview
+
 SPI is a synchronous serial communication protocol used for short-distance communication, primarily in embedded systems. It allows multiple devices to communicate with one another by sharing a common clock signal, which ensures data is transmitted in a synchronized manner.
 
-> SPI Components
-MOSI (Master Out Slave In): Data line for data sent from the master to the slave.
-
-MISO (Master In Slave Out): Data line for data sent from the slave to the master.
-
-SCK (Serial Clock): Clock line driven by the master, used to synchronize data transmission.
-
-SS (Slave Select): Line used to select the slave device for communication
 
 > How to program
 

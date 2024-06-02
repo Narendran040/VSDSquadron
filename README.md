@@ -290,6 +290,84 @@ gtkwave iiitb_rv32i.vcd
 ![task 3 2](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/3a721525-6f58-43d3-85f8-4e9d4cf4ef71)
 
 
+The output waveform shows the instructions performed in a 5-stage pipelined architecture.
+
+Instruction 1:add r6,r2,r1
+
+add r6 r1 r1
+
+![t 1](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/2d1b535e-5493-4ab2-9d29-353127c3be8d)
+
+
+Instruction 2:sub r7,r1,r2
+
+sub r7 r1 r2
+
+![t 2](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/7eb433f1-8533-482f-a887-ac061611961a)
+
+
+Instruction 3:and r8,r1,r3
+
+and r8 r1 r3
+
+![t 3](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/941520f6-338c-4429-952c-2b68a6f1071c)
+
+
+Instruction 4:or r9,r2,r5
+
+or r9 r2 r5
+
+![t 4](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/9ecc3dba-733a-4966-8d01-773d2771a60c)
+
+
+Instruction 5:xor r10,r1,r4
+
+xor r10 r1 r4
+
+![t 5](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/3b680095-34d0-48b8-8cdb-484080b5e1ec)
+
+
+Instruction 6:slt r11,r2,r4
+
+slt r11 r2 r4
+
+![t 6](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/a130e53d-6525-4af0-8ca3-b44d1d70a3ab)
+
+
+Instruction 7:addi r12,r4,5
+
+addi r12 r4 5
+
+![t 7](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/53270574-6f84-4741-b5ff-3f9f3f861304)
+
+
+Instruction 8:sw r3,r1,2
+
+sw r3 r1 2
+
+![t 8](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/6f6fff8b-2879-47da-ae59-5891ae233de6)
+
+
+Instruction 9:lw r13,r1,2
+
+lw r13 r1 2
+
+![t 9](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/1e0f4cae-494e-4a5f-96ec-5376ea83c9a9)
+
+
+Instruction 10:beq r0,r0,15
+
+After branching, performing Instruction 11:add r14,r2,r2
+
+![t 10](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/e0950146-60e8-4a72-9b04-6481c2dad1ff)
+
+
+Full 5-stage instruction pipeline and pc-increment description Waveform
+
+![t 11](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/dd728857-6cd9-4d77-8fc6-fbfe208af32b)
+
+
+
 ![task 3 4](https://github.com/Narendran040/VSDSquadron-Mini-project/assets/157210399/a7ab9f73-d88a-4c32-a195-7c7cc250a9ca)
 
 
